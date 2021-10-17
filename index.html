@@ -8,97 +8,123 @@
   
   <title>Frontend Mentor | [Blogr]</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <!--header page-->
   <header class="header-page">
+    <!--nav page-->
     <nav class="nav-page">
       <div class="nav-page__box-logo">
-        <img src="./images/logo.svg" alt="" class="header-page__logo">
+        <img src="./images/logo.svg" alt="" class="nav-page__logo">
       </div>
+      <div class="nav-page__box-menu">
+        <!--dropdown menu block-->
       <div class="dropdown-menu">
         <ul class="dropdown-menu__list">
           <li class="dropdown-menu__option">
             <p class="dropdown-menu__text">Product</p>
-            <img src="" alt="" class="dropdown-menu__image">
+            <img src="./images/icon-arrow-light.svg" alt="" class="dropdown-menu__image">
+            <!--dropdown block-->
             <div class="dropdown">
               <ul class="dropdown__list">
                 <li class="dropdown__option"><a href="" class="dropdown__link">Overview</a></li>
                 <li class="dropdown__option"><a href="" class="dropdown__link">Pricing</a></li>
                 <li class="dropdown__option"><a href="" class="dropdown__link">Marketplace</a></li>
                 <li class="dropdown__option"><a href="" class="dropdown__link">Features</a></li>
-                <li class="dropdown__option"><a href="" class="dropdown__link">Integrations</a></li>
+                <li class="dropdown__option dropdown__option--margin-none"><a href="" class="dropdown__link">Integrations</a></li>
               </ul>
             </div>
           </li>
-          <li class="dropdown-menu__option">
+          <!--dropdown menu block-->
+          <li class="dropdown-menu__option dropdown-menu__option--margin">
             <p class="dropdown-menu__text">Company</p>
-            <img src="" alt="" class="dropdown-menu__image">
+            <img src="./images/icon-arrow-light.svg" alt="" class="dropdown-menu__image">
+            <!--dropdown block-->
             <div class="dropdown">
               <ul class="dropdown__list">
                 <li class="dropdown__option"><a href="" class="dropdown__link">About</a></li>
                 <li class="dropdown__option"><a href="" class="dropdown__link">Team</a></li>
                 <li class="dropdown__option"><a href="" class="dropdown__link">Blog</a></li>
-                <li class="dropdown__option"><a href="" class="dropdown__link">Careers</a></li>
+                <li class="dropdown__option dropdown__option--margin-none"><a href="" class="dropdown__link">Careers</a></li>
               </ul>
             </div>
           </li>
+          <!--dropdown menu block-->
           <li class="dropdown-menu__option">
             <p class="dropdown-menu__text">Connect</p>
-            <img src="" alt="" class="dropdown-menu__image">
+            <img src="./images/icon-arrow-light.svg" alt="" class="dropdown-menu__image">
+            <!--dropdown block-->
             <div class="dropdown">
               <ul class="dropdown__list">
                 <li class="dropdown__option"><a href="" class="dropdown__link">Contact</a></li>
                 <li class="dropdown__option"><a href="" class="dropdown__link">Newsletter</a></li>
-                <li class="dropdown__option"><a href="" class="dropdown__link">LinkedIn</a></li>
+                <li class="dropdown__option dropdown__option--margin-none"><a href="" class="dropdown__link">LinkedIn</a></li>
               </ul>
             </div>
           </li>
         </ul>
       </div>
-      <div class="united-options">
-        <a href="#" class="united-options__link">Login</a>
+      <!--united options block-->
+      <div class="united-options united-options--position">
+        <a href="#" class="united-options__link united-options__link--transparent">Login</a>
         <a href="#" class="united-options__link">Sign Up</a>
+      </div>
       </div>
     </nav>
     <h1 class="header-page__tittle">A modern publishing platform</h1>
     <p class="header-page__text">Grow your audience and build your online brand</p>
-    <div class="united-options">
+    <!--united options block-->
+    <div class="united-options united-options--margin">
+      
       <a href="#" class="united-options__link">Start for Free</a>
-      <a href="#" class="united-options__link">Learn More</a>
+      <a href="#" class="united-options__link united-options__link--transparent-border">Learn More</a>
     </div>
   </header>
+  <!--main page-->
   <main class="main-page">
+    <!--work presentation section-->
     <section class="work-presentation">
-      <h2 class="work-presentation">Designed for the future</h2>
+      <h2 class="work-presentation__title">Designed for the future</h2>
       <div class="work-presentation__box-text">
-        <div class="related-text">
+        <!--related text block-->
+        <div class="related-text related-text--margin">
           <h3 class="related-text__title">Introducing an extensible editor</h3>
           <p class="related-text__text">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
         </div>
+        <!--related text block-->
         <div class="related-text">
           <h3 class="related-text__title">Robust content management</h3>
           <p class="related-text__text">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
         </div>
       </div>
     </section>
+    <!--art presentation section-->
     <section class="art-presentation">
-      <div class="art presentation__box-image">
-        <img src="" alt="" class="art-presentation__image">
+      <div class="art-presentation__box-image">
+        <img src="./images/illustration-phones.svg" alt="" class="art-presentation__image">
       </div>
-      <div class="art-presentation">
+      <div class="art-presentation__box-text">
+        <!--related text block-->
         <div class="related-text">
           <h3 class="related-text__title">State of the Art Infrastructure</h3>
           <p class="related-text__text">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
         </div>
       </div>
     </section>
+    <!--feactures presentation section-->
     <section class="features-presentation">
       <div class="features-presentation__box-text">
-        <div class="related-text">
+        <!--related text block-->
+        <div class="related-text related-text--margin">
           <h3 class="related-text__title">Free, open, simple</h3>
           <p class="related-text__text">Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
         </div>
+        <!--related text block-->
         <div class="related-text">
           <h3 class="related-text__title">Powerful tooling</h3>
           <p class="related-text__text">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
@@ -106,10 +132,12 @@
       </div>
     </section>
   </main>
+  <!--footer page-->
   <footer class="footer-page">
     <div class="footer-page__box-logo">
       <img src="./images/logo.svg" alt="" class="footer-page__logo">
     </div>
+    <!--page summary block-->
     <div class="page-summary">
       <h4 class="page-summary__title">Product</h4>
       <ul class="page-summary__list">
@@ -120,7 +148,8 @@
         <li class="page-summary__option"><a href="" class="page-summary__link">Integrations</a></li>
       </ul>
     </div>
-    <div class="page-summary">
+    <!--page summary block-->
+    <div class="page-summary page-summary--margin">
       <h4 class="page-summary__title">Company</h4>
       <ul class="page-summary__list">
         <li class="page-summary__option"><a href="" class="page-summary__link">About</a></li>
@@ -129,6 +158,7 @@
         <li class="page-summary__option"><a href="" class="page-summary__link">Careers</a></li>
       </ul>
     </div>
+    <!--page summary block-->
     <div class="page-summary">
       <h4 class="page-summary__title">Connect</h4>
       <ul class="page-summary__list">
