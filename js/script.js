@@ -6,12 +6,10 @@ var optionSelect = -1;
 function addEventClickToMenu(menuOptions, dropdown, index){
     menuOptions[index].addEventListener('click', function (event) {
         dropdown[index].classList.toggle("dropdown--show");
-        if(optionSelect != index){
-            if(optionSelect != -1){
-                dropdown[optionSelect].classList.toggle("dropdown--show");
-            }
-            optionSelect = index;
+        if(optionSelect != -1  || optionSelect == index){
+            dropdown[optionSelect].classList.toggle("dropdown--show");
         }
+        optionSelect = index;
     });
 }
 
