@@ -98,6 +98,10 @@ body {
 
   list-style: none;
 }
+.dropdown-menu__content {
+  display: flex;
+  align-items: center;
+}
 .dropdown-menu__option {
   position: relative;
 
@@ -109,17 +113,8 @@ body {
   margin: 0 4rem;
 }
 .dropdown-menu__text {
-  position: relative;
-
-  margin-right: 3rem;
+  margin-right: 1rem;
   font-size: 1.6rem;
-}
-.dropdown-menu__text::after {
-  content: url(../images/icon-arrow-light.svg);
-  position: absolute;
-  top: 0;
-  right: -2rem;
-  width: 1rem;
 }
 .dropdown-menu__image {
   display: block;
@@ -176,11 +171,11 @@ body {
 
   border-radius: 5rem;
 }
-.united-options__content:nth-child(1) {
-  margin-right: 0.5rem;
+.united-options__content--mg-left {
+  margin-left: 1rem;
 }
-.united-options__content:nth-child(2) {
-  margin-left: 0.5rem;
+.united-options__content--margin {
+  margin-left: 1rem;
 }
 .united-options__link {
   display: inline-block;
@@ -366,6 +361,12 @@ body {
     font-size: 66%;
   }
 }
+@media screen and (max-width: 1280px) {
+  /*component*/
+  html {
+    font-size: 55.6%;
+  }
+}
 @media screen and (max-width: 1024px) {
   /*component*/
   html {
@@ -417,31 +418,38 @@ body {
     padding-top: 8rem;
     margin-bottom: 18rem;
   }
+  .nav-page__logo {
+    width: 12rem;
+  }
   .nav-page__image-menu {
     display: block;
     width: 5rem;
   }
   .nav-page__box-menu {
     background-color: var(--color-white);
-    display: block;
+    display: none;
 
     position: absolute;
 
     width: calc(100% - 8rem);
 
     left: 4rem;
-    top: 16rem;
+    top: 18rem;
 
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
 
     color: var(--color-dark-blue);
 
-    padding: 4rem;
+    padding: 5rem 4rem;
 
     border-radius: 0.8rem;
+    box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.3);
 
     z-index: 200;
+  }
+  .nav-page__box-menu--show {
+    display: flex;
   }
   .united-options--position {
     position: relative;
@@ -453,11 +461,14 @@ body {
     flex-direction: column;
 
     padding: 0 12rem;
+
+    border-top: 1px solid var(--color-grayish);
   }
   /*dropdown menu block*/
   .dropdown-menu {
     justify-content: center;
-    font-family: "Ubuntu", sans-serif;
+
+    margin-bottom: 2rem;
   }
   .dropdown-menu__list {
     flex-direction: column;
@@ -476,17 +487,13 @@ body {
     margin: 0 4rem;
   }
   .dropdown-menu__text {
-    margin-right: 0rem;
     font-size: 2.6rem;
   }
-  .dropdown-menu__text::after {
-    content: url(../images/icon-arrow-dark.svg);
-    position: absolute;
-    top: -4px;
-    right: -3rem;
-    width: 1rem;
-    height: auto;
-    transform: scale();
+  .dropdown-menu__image {
+    width: 1.5rem;
+
+    filter: invert(47%) sepia(41%) saturate(4211%) hue-rotate(326deg)
+      brightness(102%) contrast(106%);
   }
   /*dropdown block*/
   .dropdown {
@@ -499,7 +506,8 @@ body {
     top: 0;
     left: 0;
 
-    padding: 3rem 0;
+    padding: 4rem 0;
+    margin-top: 3rem;
   }
   .dropdown--show {
     display: block;
@@ -508,16 +516,14 @@ body {
     list-style: none;
   }
   .dropdown__option {
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
   }
   .dropdown__option--margin-none {
     margin-bottom: 0rem;
   }
   .dropdown__link {
     color: var(--color-dark-blue);
-    text-decoration: none;
-    font-size: 1.4rem;
-    font-weight: 900;
+    font-size: 2.4rem;
   }
   /*united options block*/
   .united-options--margin {
@@ -533,11 +539,11 @@ body {
   .united-options__content {
     padding: 1.6rem 3.2rem;
   }
-  .united-options__content:nth-child(1) {
-    margin-right: 1rem;
+  .united-options__content--margin {
+    margin: 3rem 0;
   }
-  .united-options__content:nth-child(2) {
-    margin-left: 1rem;
+  .united-options__content--mg-left {
+    margin-right: 2rem;
   }
   .united-options__content--gradient {
     background: linear-gradient(
@@ -553,7 +559,7 @@ body {
   .work-presentation {
     background-image: url(../images/illustration-editor-mobile.svg);
     background-size: 110vw;
-    background-position: center top 22rem;
+    background-position: center top 28rem;
 
     display: block;
 
@@ -561,7 +567,8 @@ body {
   }
   .work-presentation__title {
     font-size: 3.8rem;
-    margin-bottom: 50rem;
+    margin-bottom: 60rem;
+    padding-top: 16rem;
   }
   .work-presentation__box-text {
     align-self: none;
@@ -675,5 +682,47 @@ body {
     text-decoration: none;
     font-size: 2.8rem;
     font-family: "Ubuntu", sans-serif;
+  }
+}
+@media screen and (max-width: 540px) {
+  /*component*/
+  html {
+    font-size: 56.5%;
+  }
+}
+@media screen and (max-width: 426px) {
+  /*component*/
+  html {
+    font-size: 44.5%;
+  }
+}
+@media screen and (max-width: 412px) {
+  /*component*/
+  html {
+    font-size: 43.5%;
+  }
+}
+@media screen and (max-width: 376px) {
+  /*component*/
+  html {
+    font-size: 38.5%;
+  }
+}
+@media screen and (max-width: 360px) {
+  /*component*/
+  html {
+    font-size: 37.5%;
+  }
+}
+@media screen and (max-width: 320px) {
+  /*component*/
+  html {
+    font-size: 33.5%;
+  }
+}
+@media screen and (max-width: 320px) {
+  /*component*/
+  html {
+    font-size: 29.5%;
   }
 }

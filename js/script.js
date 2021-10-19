@@ -1,6 +1,9 @@
 const menuOptions = document.querySelectorAll(".dropdown-menu__text");
 const dropdown = document.querySelectorAll(".dropdown");
 
+const imageMenu = document.querySelector(".nav-page__image-menu");
+const menu = document.querySelector(".nav-page__box-menu");
+
 var optionSelect = -1;
 
 function addEventClickToMenu(menuOptions, dropdown, index){
@@ -12,6 +15,10 @@ function addEventClickToMenu(menuOptions, dropdown, index){
         optionSelect = index;
     });
 }
+
+imageMenu.addEventListener('click', function (event) {
+    menu.classList.toggle("nav-page__box-menu--show");
+});
 
 for(a = 0; a < menuOptions.length; a++){
     addEventClickToMenu(menuOptions, dropdown, a);
