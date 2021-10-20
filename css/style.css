@@ -233,6 +233,8 @@ body {
   padding-bottom: 16rem;
 }
 .work-presentation__title {
+  color: var(--color-dark-blue);
+
   font-size: 3.8rem;
   text-align: center;
 
@@ -242,20 +244,23 @@ body {
 .work-presentation__box-text {
   align-self: flex-start;
 
-  width: 50%;
+  width: 55%;
 
-  padding: 4rem 1.3rem;
-  padding-left: 14rem;
+  padding: 4rem 0;
+  padding-left: 21rem;
 }
 .related-text--margin {
   margin-bottom: 6rem;
 }
 .related-text__title {
+  color: var(--color-dark-blue);
   font-size: 3rem;
 
   margin-bottom: 4rem;
 }
 .related-text__text {
+  font-family: "Ubuntu", sans-serif;
+  color: var(--color-dark-grayish);
   font-size: 1.8rem;
   line-height: 3.5rem;
 }
@@ -292,7 +297,7 @@ body {
 .art-presentation__box-text {
   flex: 0 1 55%;
 
-  padding-right: 27rem;
+  padding-right: 22rem;
 }
 /*feactures presentation section*/
 .features-presentation {
@@ -310,9 +315,18 @@ body {
 .features-presentation__box-text {
   align-self: flex-end;
 
-  width: 50%;
+  width: 55%;
 
   padding: 4rem 0;
+}
+.features-presentation__box-text--padding {
+  padding-right: 22rem;
+}
+.related-text__text--color {
+  color: var(--color-white);
+}
+.related-text__title--color {
+  color: var(--color-white);
 }
 /*footer page*/
 .footer-page {
@@ -446,8 +460,6 @@ body {
 
     /*display: flex;*/
     flex-direction: column;
-
-    color: var(--color-dark-blue);
 
     padding: 6rem;
 
@@ -708,7 +720,7 @@ body {
 @media screen and (max-width: 426px) {
   /*component*/
   html {
-    font-size: 35.5%;
+    font-size: 34.5%;
   }
 }
 @media screen and (max-width: 412px) {
@@ -726,13 +738,13 @@ body {
 @media screen and (max-width: 360px) {
   /*component*/
   html {
-    font-size: 37.5%;
+    font-size: 28.5%;
   }
 }
 @media screen and (max-width: 320px) {
   /*component*/
   html {
-    font-size: 26.5%;
+    font-size: 25.5%;
   }
 }
 @media screen and (max-width: 280px) {
