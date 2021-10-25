@@ -121,6 +121,11 @@ body {
 .dropdown-menu__image {
   display: block;
   width: 1rem;
+
+  transition-duration: 0.5s;
+}
+.dropdown-menu__image--transition {
+  transform: rotate(180deg);
 }
 /*dropdown block*/
 .dropdown {
@@ -377,16 +382,34 @@ body {
     font-size: 82.5%;
   }
 }
+@media screen and (max-width: 1680px) {
+  /*component*/
+  html {
+    font-size: 73%;
+  }
+}
 @media screen and (max-width: 1600px) {
   /*component*/
   html {
-    font-size: 66%;
+    font-size: 69.5%;
   }
 }
 @media screen and (max-width: 1440px) {
   /*component*/
   html {
     font-size: 62.5%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  /*component*/
+  html {
+    font-size: 60.5%;
+  }
+}
+@media screen and (max-width: 1370px) {
+  /*component*/
+  html {
+    font-size: 59.3%;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -398,13 +421,19 @@ body {
 @media screen and (max-width: 1024px) {
   /*component*/
   html {
-    font-size: 44.5%;
+    font-size: 44.3%;
+  }
+}
+@media screen and (max-width: 800px) {
+  /*component*/
+  html {
+    font-size: 34.7%;
   }
 }
 @media screen and (max-width: 768px) {
   /*component*/
   html {
-    font-size: 62.5%;
+    font-size: 61.5%;
   }
   /*header page*/
   .header-page {
@@ -711,6 +740,12 @@ body {
     font-family: "Ubuntu", sans-serif;
   }
 }
+@media screen and (max-width: 600px) {
+  /*component*/
+  html {
+    font-size: 46.5%;
+  }
+}
 @media screen and (max-width: 540px) {
   /*component*/
   html {
@@ -744,7 +779,7 @@ body {
 @media screen and (max-width: 320px) {
   /*component*/
   html {
-    font-size: 25.5%;
+    font-size: 24.5%;
   }
 }
 @media screen and (max-width: 280px) {
