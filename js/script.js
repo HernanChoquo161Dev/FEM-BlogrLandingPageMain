@@ -5,17 +5,19 @@ const dropdown = document.querySelectorAll(".dropdown");
 const showMenu = document.querySelector(".nav-page__image-menu");
 const menu = document.querySelector(".nav-page__box-menu");
 
+const meneHeight = ["29.4rem","23.5rem", "17.6rem"];
+
 var optionSelect = -1;
 
 function addEventClickToMenu(menuOptions, dropdown, index){
     menuOptions[index].addEventListener('click', function (event) {
 
-        dropdown[index].classList.toggle("dropdown--show");
+        dropdown[index].classList.toggle("dropdown--show--animation");
         imageOptions[index].classList.toggle("dropdown-menu__image--transition");
         
         if(optionSelect != -1 && optionSelect != index){
-            if(dropdown[optionSelect].classList.contains("dropdown--show")){
-                dropdown[optionSelect].classList.toggle("dropdown--show");
+            if(dropdown[optionSelect].classList.contains("dropdown--show--animation")){
+                dropdown[optionSelect].classList.toggle("dropdown--show--animation");
                 imageOptions[optionSelect].classList.toggle("dropdown-menu__image--transition");
             }
         }
