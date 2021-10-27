@@ -15,7 +15,7 @@
   --color-gray-blue: hsl(237, 18%, 21%);
   --color-desaturated-blue: hsl(237, 23%, 32%);
 
-  --height-animation: 400px;
+  --height-animation: 100rem;
 }
 /*normalize*/
 *,
@@ -34,7 +34,6 @@ body {
   min-height: 100vh;
 
   font-family: "Overpass", sans-serif;
-  /*font-family: "Ubuntu", sans-serif;*/
 }
 /*header page*/
 .header-page {
@@ -115,14 +114,18 @@ body {
   margin: 0 4rem;
 }
 .dropdown-menu__text {
-  margin-right: 1rem;
   font-size: 1.6rem;
 
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
 }
 .dropdown-menu__image {
   display: block;
   width: 1rem;
+
+  margin-left: 1rem;
 
   transition-duration: 0.5s;
 }
@@ -140,21 +143,20 @@ body {
   max-height: 0px;
   overflow: hidden;
 
-  margin: 0;
-  padding: 0;
-
-  border-radius: 1rem;
-
   padding-left: 2rem;
   padding-right: 6rem;
 
+  border-radius: 1rem;
+
+  opacity: 0;
   transition-duration: 0.5s;
 }
-.dropdown--show--animation {
+.dropdown--show {
   /*padding: 3rem 2rem;*/
 
   padding-top: 3rem;
   padding-bottom: 3rem;
+  opacity: 1;
 
   max-height: var(--height-animation);
 }
@@ -308,8 +310,10 @@ body {
 }
 .art-presentation__image {
   display: block;
-  position: absolute;
+
   width: 48rem;
+
+  position: absolute;
   top: -16rem;
   right: 4rem;
 }
@@ -362,6 +366,7 @@ body {
 }
 .footer-page__logo {
   display: block;
+
   width: 10rem;
 }
 /*page summary block*/
@@ -385,61 +390,51 @@ body {
   font-size: 1.4rem;
 }
 @media screen and (max-width: 2600px) {
-  /*component*/
   html {
     font-size: 111.3%;
   }
 }
 @media screen and (max-width: 2000px) {
-  /*component*/
   html {
     font-size: 82.5%;
   }
 }
 @media screen and (max-width: 1680px) {
-  /*component*/
   html {
     font-size: 72.7%;
   }
 }
 @media screen and (max-width: 1600px) {
-  /*component*/
   html {
     font-size: 69.3%;
   }
 }
 @media screen and (max-width: 1440px) {
-  /*component*/
   html {
     font-size: 62.3%;
   }
 }
 @media screen and (max-width: 1400px) {
-  /*component*/
   html {
     font-size: 60.5%;
   }
 }
 @media screen and (max-width: 1370px) {
-  /*component*/
   html {
     font-size: 58.5%;
   }
 }
 @media screen and (max-width: 1280px) {
-  /*component*/
   html {
     font-size: 55.6%;
   }
 }
 @media screen and (max-width: 1024px) {
-  /*component*/
   html {
     font-size: 44.5%;
   }
 }
 @media screen and (max-width: 800px) {
-  /*component*/
   html {
     font-size: 34.7%;
   }
@@ -465,9 +460,9 @@ body {
     border-bottom-left-radius: 10rem;
   }
   .header-page__tittle {
-    margin-bottom: 3rem;
     font-size: 7rem;
 
+    margin-bottom: 3rem;
     padding: 0 6rem;
   }
   .header-page__text {
@@ -488,10 +483,12 @@ body {
   }
   .nav-page__image-menu {
     display: block;
+
     width: 6.5rem;
   }
   .nav-page__box-menu {
     background-color: var(--color-white);
+
     display: none;
 
     position: absolute;
@@ -559,51 +556,30 @@ body {
   }
   .dropdown-menu__image {
     width: 2.5rem;
+
+    margin-left: 2rem;
+
     content: url(../images/icon-arrow-dark.svg);
   }
   /*dropdown block*/
   .dropdown {
     background-color: var(--color-grayish);
-    position: relative;
     display: block;
 
     width: 100%;
-    max-height: 0px;
 
-    overflow: hidden;
-
+    position: relative;
     top: 0;
     left: 0;
 
     padding: 0;
     margin: 0;
-
-    transition-duration: 0.5s;
   }
-  .dropdown--show--animation {
+  .dropdown--show {
     padding: 6rem 0;
     margin-top: 3rem;
     max-height: var(--height-animation);
   }
-  /*animation
-  .dropdown--show--animation {
-    animation-name: showMenu;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-  }
-  @keyframes showMenu {
-    0% {
-      height: 0;
-    }
-    100% {
-      /*height: 50rem;
-
-      padding: 6rem 0;
-      margin-top: 3rem;
-      height: auto;
-    }
-  }*/
   .dropdown__list {
     list-style: none;
   }
@@ -780,49 +756,41 @@ body {
   }
 }
 @media screen and (max-width: 600px) {
-  /*component*/
   html {
     font-size: 46.5%;
   }
 }
 @media screen and (max-width: 540px) {
-  /*component*/
   html {
     font-size: 44.5%;
   }
 }
 @media screen and (max-width: 426px) {
-  /*component*/
   html {
     font-size: 34.5%;
   }
 }
 @media screen and (max-width: 412px) {
-  /*component*/
   html {
     font-size: 33.5%;
   }
 }
 @media screen and (max-width: 376px) {
-  /*component*/
   html {
     font-size: 30.5%;
   }
 }
 @media screen and (max-width: 360px) {
-  /*component*/
   html {
     font-size: 28.5%;
   }
 }
 @media screen and (max-width: 320px) {
-  /*component*/
   html {
     font-size: 25%;
   }
 }
 @media screen and (max-width: 280px) {
-  /*component*/
   html {
     font-size: 22.5%;
   }

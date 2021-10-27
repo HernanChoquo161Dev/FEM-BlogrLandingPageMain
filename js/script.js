@@ -12,12 +12,12 @@ var optionSelect = -1;
 function addEventClickToMenu(menuOptions, dropdown, index){
     menuOptions[index].addEventListener('click', function (event) {
 
-        dropdown[index].classList.toggle("dropdown--show--animation");
+        dropdown[index].classList.toggle("dropdown--show");
         imageOptions[index].classList.toggle("dropdown-menu__image--transition");
         
         if(optionSelect != -1 && optionSelect != index){
-            if(dropdown[optionSelect].classList.contains("dropdown--show--animation")){
-                dropdown[optionSelect].classList.toggle("dropdown--show--animation");
+            if(dropdown[optionSelect].classList.contains("dropdown--show")){
+                dropdown[optionSelect].classList.toggle("dropdown--show");
                 imageOptions[optionSelect].classList.toggle("dropdown-menu__image--transition");
             }
         }
